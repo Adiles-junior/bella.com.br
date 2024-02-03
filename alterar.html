@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link rel="icon" href="img/logo_t.png" type="image/x-icon"> <!-- Imagen do título -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 -->
+</head>
+
+<body style="background-image: url('img/fundo.png'); background-size: cover; background-repeat: repeat;">
+
+    <!-- Menu topo da página -->
+    <!--<nav class="navbar navbar-expand-sm navbar-danger bg-danger">-->
+    <nav class="navbar navbar-expand-sm" style="background-color: #c80f11;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo2p.png" class="rounded" alt="Cinque Terre"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toponavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item" style="border: 1px solid white; border-radius: 50%;">
+                        <a class="nav-link" style="color: white; font-family: Comic Sans MS, cursive, sans-serif;"
+                            href="index.html">INíCIO</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="pesquisar">
+                    <button class="btn btn-danger" type="button">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <form action="" class="formulario" method="post">
+        <div class="row">
+            <!-- Coluna 1 -->
+            <div class="col-2"></div>
+            <!-- Coluna 2 -->
+            <div class="col-8">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <label for="name" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite o nome" name="nome" value="Adiles Santos Júnior">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="cnpj" class="form-label">CNPJ:</label>
+                            <input type="text" class="form-control" id="cnpj" placeholder="Digite o CNPJ" name="cnpj">
+                        </div>
+                        <div class="col">
+                            <label for="cpf" class="form-label">CPF:</label>
+                            <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF" name="cpf" value="12345678912">
+                        </div>
+                        <div class="col">
+                            <label for="rg" class="form-label">RG:</label>
+                            <input type="text" class="form-control" id="rg" placeholder="Digite o RG" name="rg" value="9876543">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite o email"
+                                name="email" value="adilesjunior14@gmail.com">
+                        </div>
+                        <div class="col">
+                            <label for="pwd" class="form-label">Senha:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Digite a senha"
+                                name="senha" value="12345678">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="dob" class="form-label">Data de Nascimento:</label>
+                            <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" value="1996-01-14">
+                        </div>
+                        <div class="col">
+                            <label for="Sexo" class="text">Sexo:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexo" id="feminino">
+                                <label class="form-check-label" for="feminino">Feminino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexo" id="masculino" checked>
+                                <label class="form-check-label" for="masculino">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexo" id="nao_info">
+                                <label class="form-check-label" for="nao_info">Prefiro não informar</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <label for="uf" class="form-label">UF (Estado no Brasil):</label>
+                            <select class="form-select" id="uf" name="uf" value="Pernambuco">
+                                <option value="" disabled selected>Selecione o estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                            <label for="city" class="form-label">Cidade:</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Digite a cidade"
+                                name="cidade" value="Paulista">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="endereco" class="form-label">Logradouro:</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Digite o endereço"
+                                name="endereco" value="Rua Parnamirm">
+                        </div>
+                        <div class="col">
+                            <label for="endereco_comp" class="form-label">Complemento:</label>
+                            <input type="text" class="form-control" id="endereco_comp" placeholder="Complemento"
+                                name="complemento" value="B">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="sobre_voce">Fale sobre você:</label>
+                            <textarea class="form-control" rows="5" id="sobre_voce" name="text"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" checked>
+                        <label for="concordo">Li e concordo.</label>
+                        <br>
+                        <br>
+                    </div>
+                    <input class="btn btn-warning" type="reset" value="Limpar">
+                    <button type="button" class="btn btn-success">Cadastrar</button>
+                </form>
+
+            </div>
+            <!-- Coluna 3 -->
+            <div class="col-2"></div>
+        </div>
+    </form>
+    <br><br><br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script> <!-- Bootstrap 5 -->
+</body>
+
+</html>
